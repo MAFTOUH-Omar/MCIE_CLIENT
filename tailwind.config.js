@@ -18,6 +18,8 @@ module.exports = {
     },
     extend: {
       colors: {
+        mycolor:"var(--mycolor)" ,
+        mycolorhover:"var(--mycolorhover)" ,
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
