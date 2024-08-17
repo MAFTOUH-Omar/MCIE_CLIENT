@@ -4,10 +4,14 @@ import { ThemeContext } from '../context/ThemeContext';
 import NotFounds from './NotFound';
 import Index from './Home/Index';
 import { 
-  LoaderPinwheel ,
+  BookOpen ,
   Sun ,
   Moon ,
 } from 'lucide-react';
+import Study from './Studies/Study';
+import Activity from './Activities/Activity';
+import Dialogue from './Dialogues/Dialogue';
+import Publication from './Publications/Publication';
 
 const Topbar = () => {
   const [changeHeader, setChangeHeader] = useState(false);
@@ -27,19 +31,19 @@ const Topbar = () => {
           : 'bg-transparent fixed z-50 top-0 left-0 w-full transition duration-500'
         }
       >
-        <nav className='flex justify-between items-center mx-auto px-4 py-4'>
+        <nav className='flex justify-between items-center p-4'>
           <div>
             <Link to={'/'} className='font-bold text-xl dark:text-white text-black'>
-              <LoaderPinwheel size={30} />
+              <BookOpen size={30} />
             </Link>
           </div>
-          <div className='text-center mx-auto'>
-            {/* <Link to={'/الأنشطة'} className='mx-2 text-lg font-semibold'>الأنشطة</Link>
-            <Link to={'/المقالات'} className='mx-2 text-lg font-semibold'>المقالات</Link>
-            <Link to={'/الحوارات'} className='mx-2 text-lg font-semibold'>الحوارات</Link>
-            <Link to={'/المنشورات'} className='mx-2 text-lg font-semibold'>المنشورات</Link>
-            <Link to={'/الندوات'} className='mx-2 text-lg font-semibold'>الندوات</Link>
-            <Link to={'/الدراسات'} className='mx-2 text-lg font-semibold'>الدراسات</Link> */}
+          <div className='flex justify-center items-center space-x-6'>
+            <Link to={'/الأنشطة'} className='font-semibold'>الأنشطة</Link>
+            {/* <Link to={'/المقالات'} className='font-semibold'>المقالات</Link> */}
+            <Link to={'/الحوارات'} className='font-semibold'>الحوارات</Link>
+            <Link to={'/المنشورات'} className='font-semibold'>المنشورات</Link>
+            {/* <Link to={'/الندوات'} className='font-semibold'>الندوات</Link> */}
+            <Link to={'/الدراسات'} className='font-semibold'>الدراسات</Link>
           </div>
           <div className='space-x-2 inline-flex'>
             {theme == 'dark' ? (
@@ -59,6 +63,10 @@ const Topbar = () => {
       <div className='mt-16 md:mt-0 lg:mt-16'>
         <Routes>
           <Route path='/' element={<Index />} />
+          <Route path='/الدراسات' element={<Study />} />
+          <Route path='/الأنشطة' element={<Activity />} />
+          <Route path='/الحوارات' element={<Dialogue />} />
+          <Route path='/المنشورات' element={<Publication />} />
           <Route path='*' element={<NotFounds />} />
         </Routes>
         </div>

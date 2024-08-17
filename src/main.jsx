@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
 import Topbar from './pages/Topbar';
 
+document.title = 'MCIE'
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ThemeProvider>

@@ -5,6 +5,7 @@ import '../../style/activity.css'
 import Dialogue from './Dialogue'
 import Publications from './Publications'
 import Study from './Study'
+import Footer from '../Footer/Footer'
 const Index = () => {
   return (
     <div>
@@ -30,6 +31,9 @@ const Index = () => {
         <h1 className='font-bold text-xl title'>الدراسات</h1>
       </div>
       <Study/>
+      <div>
+      <Footer/>
+      </div>
     </div>
   )
 }

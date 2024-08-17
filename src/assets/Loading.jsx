@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 helix.register()
 
 const Loading = () => {
-    document.title = 'loading...'
     const [helixColor, setHelixColor] = useState();
     useEffect(() => {
         const rootStyles = getComputedStyle(document.documentElement);
