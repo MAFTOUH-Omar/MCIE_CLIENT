@@ -1,7 +1,7 @@
 import { ChevronRight } from 'lucide-react';
 const Hero = () => {
   return (
-    <div className="flex justify-center items-center mt-[50px] md:mt-[200px] flex-col">
+    <div className="flex justify-center items-center h-[350px] flex-col">
       <div className="my-4">
         <button className="inline-flex shadow-lg py-1 px-4 space-x-2 justify-center items-center rounded-full border-2 border-black dark:border-white hover:scale-105 transition-all">
           <span className="text-sm bg-mycolor hover:bg-mycolorhover font-bold py-1 px-4 text-white flex items-center rounded-full">جديد</span>

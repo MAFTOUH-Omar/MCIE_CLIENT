@@ -34,16 +34,16 @@ const Topbar = () => {
             </Link>
           </div>
           <div className='text-center mx-auto'>
-            <Link to={'/الأنشطة'} className='mx-2 text-lg font-semibold'>الأنشطة</Link>
+            {/* <Link to={'/الأنشطة'} className='mx-2 text-lg font-semibold'>الأنشطة</Link>
             <Link to={'/المقالات'} className='mx-2 text-lg font-semibold'>المقالات</Link>
             <Link to={'/الحوارات'} className='mx-2 text-lg font-semibold'>الحوارات</Link>
             <Link to={'/المنشورات'} className='mx-2 text-lg font-semibold'>المنشورات</Link>
             <Link to={'/الندوات'} className='mx-2 text-lg font-semibold'>الندوات</Link>
-            <Link to={'/الدراسات'} className='mx-2 text-lg font-semibold'>الدراسات</Link>
+            <Link to={'/الدراسات'} className='mx-2 text-lg font-semibold'>الدراسات</Link> */}
           </div>
           <div className='space-x-2 inline-flex'>
             {theme == 'dark' ? (
-              <button onClick={()=>{toggleTheme('light')}} className='border-2 border-slate-800 p-1.5 rounded-full'>
+              <button onClick={()=>{toggleTheme('light')}} className='border-2 border-slate-600 p-1.5 rounded-full'>
                 <Sun />
               </button>
             ) :(
