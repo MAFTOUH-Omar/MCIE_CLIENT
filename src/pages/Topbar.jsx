@@ -2,7 +2,7 @@ import { useContext, useState } from 'react'
 import { Link, Route, Routes } from 'react-router-dom';
 import { ThemeContext } from '../context/ThemeContext';
 import NotFounds from './NotFound';
-import Index from './Home';
+import Index from './Home/Index';
 import { 
   LoaderPinwheel ,
   Sun ,
