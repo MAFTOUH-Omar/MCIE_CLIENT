@@ -2,7 +2,11 @@ import{ useEffect, useState } from 'react'
 import Loading from '../../assets/Loading'
 import axios from 'axios'
 import '../../style/activity.css'
-import { ExternalLink } from 'lucide-react';
+import { 
+    ThumbsUp ,
+    ThumbsDown ,
+    Users 
+} from 'lucide-react';
 
 const Study = () => {
     const [data, setData] = useState([]);
@@ -57,11 +61,13 @@ const ActivityCard = ({ activity }) => {
             <p className="text-gray-600 dark:text-gray-300 mt-2">{activity.description}</p>
         </div>
         <div className='flex justify-between mt-2 px-4 py-2'>
-                <p className="text-gray-600 dark:text-gray-300 mt-2">{activity.created_at.split('T')[0]}</p>
-                <button className='bg-mycolor hover:bg-mycolorhover text-white rounded-full p-2 flex justify-center items-center'>
-                    <ExternalLink />
-                </button>
+            <p className="text-gray-600 dark:text-gray-300 mt-2">{activity.created_at.split('T')[0]}</p>
+            <div className='space-x-2'>
+                <button className='inline-flex items-center mx-2'><ThumbsUp /><span className='text-sm font-bold mx-1'>10</span></button>
+                <button className='inline-flex items-center mx-2'><ThumbsDown  /><span className='text-sm font-bold mx-1'>2</span></button>
+                <button className='inline-flex items-center mx-2'><Users  /><span className='text-sm font-bold mx-1'>5</span></button>
             </div>
+        </div>
     </div>
 )};
 

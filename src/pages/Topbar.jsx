@@ -70,7 +70,7 @@ const Topbar = () => {
 
         {/* Mobile Top Bar */}
         <div className='md:hidden block'>
-          <nav className='flex justify-between items-center p-4 z-0'>
+          <nav className='flex justify-between items-center p-4 z-10'>
             <div>
               <Link onClick={closeSidebar} to={'/'} className='font-bold text-xl dark:text-white text-black'>
                 <BookOpen size={30} />
