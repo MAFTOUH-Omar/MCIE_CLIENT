@@ -46,7 +46,7 @@ const Publications = () => {
 
 const ActivityCard = ({ activity }) => {
     return (
-    <div className="w-[500px] ActivityCard bg-white dark:bg-slate-800 rounded-lg flex-shrink-0 border-2 border-slate-200 dark:border-slate-800">
+    <div className="md:w-[500px] w-[400px] ActivityCard bg-white dark:bg-slate-800 rounded-lg flex-shrink-0 border-2 border-slate-200 dark:border-slate-800">
         <img
             src={`${import.meta.env.VITE_API_PATH}/image/${activity.image}`}
             alt={activity.title}

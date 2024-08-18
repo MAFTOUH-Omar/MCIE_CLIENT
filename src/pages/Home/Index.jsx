@@ -12,7 +12,7 @@ const Index = () => {
       <div className="main"></div>
       <Hero />
       {/* Partie01 */}
-      <div className='flex justify-center items-center'>
+      <div className='flex justify-center items-center md:mt-0 mt-10'>
         <h1 className='font-bold text-xl title'>الأنشطة</h1>
       </div>
       <Activity/>
