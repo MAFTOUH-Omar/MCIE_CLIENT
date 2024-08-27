@@ -4,7 +4,6 @@ import { ThemeContext } from '../context/ThemeContext';
 import NotFounds from './NotFound';
 import Index from './Home/Index';
 import { 
-  BookOpen,
   Sun,
   Moon,
   AlignRight,
@@ -13,6 +12,7 @@ import Study from './Studies/Study';
 import Activity from './Activities/Activity';
 import Dialogue from './Dialogues/Dialogue';
 import Publication from './Publications/Publication';
+import LogoDark from '../../public/LogoDark';
 
 const Topbar = () => {
   const [changeHeader, setChangeHeader] = useState(false);
@@ -41,10 +41,10 @@ const Topbar = () => {
       >
         {/* Web Top bar */}
         <div className='hidden md:block'>
-          <nav className='flex justify-between items-center p-4'>
-            <div>
+          <nav className='flex justify-between items-center px-4 pt-2'>
+            <div className='flex justify-center items-center'>
               <Link to={'/'} className='font-bold text-xl dark:text-white text-black'>
-                <BookOpen size={30} />
+                <LogoDark theme={theme} />
               </Link>
             </div>
             <div className='flex justify-center items-center space-x-6'>
@@ -63,7 +63,7 @@ const Topbar = () => {
                   <Moon />
                 </button>
               )}
-              <button className='bg-mycolor hover:bg-mycolorhover text-sm text-white font-bold py-1.5 px-6 rounded-full'>انضم إلينا</button>
+              <button className='bg-mycolor hover:bg-mycolorhover text-sm text-white font-bold py-2 px-6 rounded-full'>انضم إلينا</button>
             </div>
           </nav>
         </div>
@@ -73,7 +73,7 @@ const Topbar = () => {
           <nav className='flex justify-between items-center p-4 z-10'>
             <div>
               <Link onClick={closeSidebar} to={'/'} className='font-bold text-xl dark:text-white text-black'>
-                <BookOpen size={30} />
+              <LogoDark theme={theme} />
               </Link>
             </div>
             <div className='space-x-2 inline-flex'>
